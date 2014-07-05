@@ -23,6 +23,5 @@ For a complete example see the enclosed `BMXFlatButtonTest`project.
 
 
 ### Contact
-
 [http://bigatti.it](http://bigatti.it)  
 [@mbigatti](https://twitter.com/mbigatti)
