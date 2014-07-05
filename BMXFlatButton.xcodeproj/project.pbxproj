@@ -10,6 +10,9 @@
 		50BC671519687AF000284AF3 /* BMXFlatButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BC671419687AF000284AF3 /* BMXFlatButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50BC671B19687AF000284AF3 /* BMXFlatButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC670F19687AF000284AF3 /* BMXFlatButton.framework */; };
 		50BC672219687AF000284AF3 /* BMXFlatButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC672119687AF000284AF3 /* BMXFlatButtonTests.swift */; };
+		50BC672C1968870200284AF3 /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC672B1968870200284AF3 /* FlatButton.swift */; };
+		50BC672E196887BC00284AF3 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC672D196887BC00284AF3 /* UIColor+RGB.swift */; };
+		50BC67301968880E00284AF3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BC672F1968880E00284AF3 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +23,20 @@
 			remoteGlobalIDString = 50BC670E19687AF000284AF3;
 			remoteInfo = BMXFlatButton;
 		};
+		50BC67611968893A00284AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BC675C1968893900284AF3 /* BMXFlatButtonTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50BC673A1968893900284AF3;
+			remoteInfo = BMXFlatButtonTest;
+		};
+		50BC67631968893A00284AF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50BC675C1968893900284AF3 /* BMXFlatButtonTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50BC674C1968893900284AF3;
+			remoteInfo = BMXFlatButtonTestTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +46,10 @@
 		50BC671A19687AF000284AF3 /* BMXFlatButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMXFlatButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BC672019687AF000284AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50BC672119687AF000284AF3 /* BMXFlatButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMXFlatButtonTests.swift; sourceTree = "<group>"; };
+		50BC672B1968870200284AF3 /* FlatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
+		50BC672D196887BC00284AF3 /* UIColor+RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		50BC672F1968880E00284AF3 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		50BC675C1968893900284AF3 /* BMXFlatButtonTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BMXFlatButtonTest.xcodeproj; path = BMXFlatButtonTest/BMXFlatButtonTest.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +74,7 @@
 		50BC670519687AF000284AF3 = {
 			isa = PBXGroup;
 			children = (
+				50BC675C1968893900284AF3 /* BMXFlatButtonTest.xcodeproj */,
 				50BC671119687AF000284AF3 /* BMXFlatButton */,
 				50BC671E19687AF000284AF3 /* BMXFlatButtonTests */,
 				50BC671019687AF000284AF3 /* Products */,
@@ -72,7 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				50BC671419687AF000284AF3 /* BMXFlatButton.h */,
+				50BC672B1968870200284AF3 /* FlatButton.swift */,
 				50BC671219687AF000284AF3 /* Supporting Files */,
+				50BC672D196887BC00284AF3 /* UIColor+RGB.swift */,
+				50BC672F1968880E00284AF3 /* View.xib */,
 			);
 			path = BMXFlatButton;
 			sourceTree = "<group>";
@@ -100,6 +125,15 @@
 				50BC672019687AF000284AF3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50BC675D1968893900284AF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50BC67621968893A00284AF3 /* BMXFlatButtonTest.app */,
+				50BC67641968893A00284AF3 /* BMXFlatButtonTestTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +214,12 @@
 			mainGroup = 50BC670519687AF000284AF3;
 			productRefGroup = 50BC671019687AF000284AF3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 50BC675D1968893900284AF3 /* Products */;
+					ProjectRef = 50BC675C1968893900284AF3 /* BMXFlatButtonTest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50BC670E19687AF000284AF3 /* BMXFlatButton */,
@@ -188,11 +228,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		50BC67621968893A00284AF3 /* BMXFlatButtonTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BMXFlatButtonTest.app;
+			remoteRef = 50BC67611968893A00284AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		50BC67641968893A00284AF3 /* BMXFlatButtonTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BMXFlatButtonTestTests.xctest;
+			remoteRef = 50BC67631968893A00284AF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		50BC670D19687AF000284AF3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC67301968880E00284AF3 /* View.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC672C1968870200284AF3 /* FlatButton.swift in Sources */,
+				50BC672E196887BC00284AF3 /* UIColor+RGB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +380,7 @@
 		50BC672619687AF000284AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -329,12 +390,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		50BC672719687AF000284AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
