@@ -73,11 +73,6 @@ class FlatButton: AbstractButton {
         super.init(frame: frame)
     }
     
-    @IBInspectable override var normalColor : UIColor { didSet{} }
-    @IBInspectable override var highlightedColor : UIColor? { didSet{} }
-    @IBInspectable override var borderWidth : CGFloat { didSet{} }
-    @IBInspectable override var borderColor : UIColor { didSet{} }
-    
     @IBInspectable var cornerRadius : CGFloat = 2 {
     didSet {
         self.layer.cornerRadius = cornerRadius
@@ -96,11 +91,6 @@ class CircularButton: AbstractButton {
     init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
-    @IBInspectable override var normalColor : UIColor { didSet{} }
-    @IBInspectable override var highlightedColor : UIColor? { didSet{} }
-    @IBInspectable override var borderWidth : CGFloat { didSet{} }
-    @IBInspectable override var borderColor : UIColor { didSet{} }
     
     override var frame: CGRect {
     didSet {

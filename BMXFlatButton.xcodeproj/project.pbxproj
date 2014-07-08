@@ -459,6 +459,7 @@
 				50BC672719687AF000284AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50BC672819687AF000284AF3 /* Build configuration list for PBXNativeTarget "BMXFlatButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				50BC672A19687AF000284AF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
