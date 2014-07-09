@@ -1,7 +1,3 @@
-# License
-
-## MIT License
-
 Copyright (c) 2014 Massimiliano Bigatti (http://bigatti.it)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

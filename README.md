@@ -20,7 +20,7 @@ For a complete example see the enclosed `BMXFlatButtonTest`project.
 
 ![Identity Inspector](http://f.cl.ly/items/381e1A1g0U2D08420s1q/Schermata%202014-07-05%20alle%2021.49.25.png)
 
-- configure the button properties as required in *Attribute Inspector*.
+- Configure the button properties as required in *Attribute Inspector*.
 
 ![Flat Button - Attribute Inspector](http://f.cl.ly/items/1E0D1r1g02351Y0m1s32/IB1.png)
 
