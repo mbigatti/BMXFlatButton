@@ -1,4 +1,6 @@
 
-BMXFlatButton.xcodeproj/xcuserdata/*
+Framework/BMXFlatButton.xcodeproj/xcuserdata/*
+TestApp/BMXFlatButtonTest.xcodeproj/xcuserdata/*
 
-BMXFlatButtonTest/BMXFlatButtonTest.xcodeproj/xcuserdata/*
+TestApp/BMXFlatButtonTest.xcodeproj/xcuserdata/max.xcuserdatad/xcschemes/xcschememanagement.plist
+Framework/BMXFlatButton.xcodeproj/xcuserdata/max.xcuserdatad/xcschemes/xcschememanagement.plist
