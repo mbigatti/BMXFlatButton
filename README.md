@@ -2,16 +2,16 @@
 
 A couple of Swift `UIButton` with a flat appearance, released as a Cocoa Touch Framework. The framework contains two button types: `FlatButton` and `CircularButton`. The first is a squared button with optional rounded corners and border; you can tweak the colors to obtain a filled or outlined style. The circular button is a circle shaped button intended to be used without a title; it also can have a optional border.
 
+![Button example](http://f.cl.ly/items/0i1l2d1o2e1E0r323l2D/BMXFlatButtonExample.png)
+
+For a complete example see the enclosed `BMXFlatButtonTest`project.
+
 ## Features
 
 - designable in Interface Builder
 - customizable highlighted color (defaults to normal color but 2% darker)
 - customizable border size and color
 - customizable corner radius (only for `FlatButton`)
-
-![Button example](http://f.cl.ly/items/0i1l2d1o2e1E0r323l2D/BMXFlatButtonExample.png)
-
-For a complete example see the enclosed `BMXFlatButtonTest`project.
 
 ## Usage
 
