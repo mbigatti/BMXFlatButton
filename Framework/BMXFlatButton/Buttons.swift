@@ -10,14 +10,6 @@ import UIKit
 
 @IBDesignable public class AbstractButton: UIButton {
     
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)
-    }
-    
-    init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
     @IBInspectable public var normalColor : UIColor = UIColor.clearColor() {
     didSet {
         updateButtonColor()
@@ -63,12 +55,12 @@ import UIKit
 
 @IBDesignable public class FlatButton: AbstractButton {
     
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)
+    public init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
-    init(frame: CGRect) {
-        super.init(frame: frame)
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
     }
     
     @IBInspectable public var cornerRadius : CGFloat = 2 {
@@ -81,12 +73,12 @@ import UIKit
 
 @IBDesignable class CircularButton: AbstractButton {
     
-    init(coder aDecoder: NSCoder!) {
-        super.init(coder: aDecoder)
+    public init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
-    init(frame: CGRect) {
-        super.init(frame: frame)
+    init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
     }
     
     override var frame: CGRect {
