@@ -8,8 +8,7 @@
 
 import UIKit
 
-@IBDesignable
-class AbstractButton: UIButton {
+@IBDesignable public class AbstractButton: UIButton {
     
     init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
@@ -19,31 +18,31 @@ class AbstractButton: UIButton {
         super.init(frame: frame)
     }
     
-    @IBInspectable var normalColor : UIColor = UIColor.clearColor() {
+    @IBInspectable public var normalColor : UIColor = UIColor.clearColor() {
     didSet {
         updateButtonColor()
     }
     }
     
-    @IBInspectable var highlightedColor : UIColor? {
+    @IBInspectable public var highlightedColor : UIColor? {
     didSet {
         updateButtonColor()
     }
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0 {
+    @IBInspectable public var borderWidth: CGFloat = 0 {
     didSet {
         layer.borderWidth = borderWidth
     }
     }
     
-    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
+    @IBInspectable public var borderColor: UIColor = UIColor.clearColor() {
     didSet {
         layer.borderColor = borderColor.CGColor
     }
     }
     
-    override var highlighted : Bool {
+    public override var highlighted : Bool {
     didSet {
         updateButtonColor()
     }
@@ -62,8 +61,7 @@ class AbstractButton: UIButton {
     }
 }
 
-@IBDesignable
-class FlatButton: AbstractButton {
+@IBDesignable public class FlatButton: AbstractButton {
     
     init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
@@ -73,7 +71,7 @@ class FlatButton: AbstractButton {
         super.init(frame: frame)
     }
     
-    @IBInspectable var cornerRadius : CGFloat = 2 {
+    @IBInspectable public var cornerRadius : CGFloat = 2 {
     didSet {
         self.layer.cornerRadius = cornerRadius
     }
@@ -81,8 +79,7 @@ class FlatButton: AbstractButton {
     
 }
 
-@IBDesignable
-class CircularButton: AbstractButton {
+@IBDesignable class CircularButton: AbstractButton {
     
     init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)

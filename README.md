@@ -27,6 +27,7 @@ For a complete example see the enclosed `BMXFlatButtonTest`project.
 ![Circular Button - Attribute Inspector](http://f.cl.ly/items/213t293C3R2L1W2I0d42/IB2.png)
 
 ## Notes
+- Xcode 6 beta 4 fixed the issues below
 - Xcode 6 beta 3: issue below is fixed but to compile the test project you'll need to apply this [fix](http://stackoverflow.com/questions/24622650/xcode-6-beta-3-invalid-virtual-filesystem-overlay-file).
 - Xcode 6 beta 2: due to a Interface Builder limitation, the Custom Class Class field does not show the `FlatButton` and `CircularButton` options in the selection box, you'll need to write them manually.
 
