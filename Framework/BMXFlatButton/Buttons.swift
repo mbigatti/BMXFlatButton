@@ -71,7 +71,7 @@ import UIKit
     
 }
 
-@IBDesignable class CircularButton: AbstractButton {
+@IBDesignable public class CircularButton: AbstractButton {
     
     public init(frame: CGRect) {
         super.init(frame: frame)
@@ -81,11 +81,19 @@ import UIKit
         super.init(coder: aDecoder)
     }
     
+    /*
     override var frame: CGRect {
     didSet {
         let wide = max(frame.size.width, frame.size.height)
         layer.cornerRadius = wide / 2
     }
     }
+    */
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let wide = max(frame.size.width, frame.size.height)
+        layer.cornerRadius = wide / 2        
+    }
 }
