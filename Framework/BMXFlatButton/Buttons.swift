@@ -42,7 +42,7 @@ import UIKit
     
     func updateButtonColor() {
         if highlighted {
-            if highlightedColor {
+            if (highlightedColor != nil) {
                 self.backgroundColor = highlightedColor!
             } else {
                 self.backgroundColor = normalColor.darkerColor(0.2)
@@ -55,11 +55,11 @@ import UIKit
 
 @IBDesignable public class FlatButton: AbstractButton {
     
-    public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    init(coder aDecoder: NSCoder!) {
+    override init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -73,22 +73,13 @@ import UIKit
 
 @IBDesignable public class CircularButton: AbstractButton {
     
-    public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    init(coder aDecoder: NSCoder!) {
+    override init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
-    /*
-    override var frame: CGRect {
-    didSet {
-        let wide = max(frame.size.width, frame.size.height)
-        layer.cornerRadius = wide / 2
-    }
-    }
-    */
     
     public override func layoutSubviews() {
         super.layoutSubviews()
