@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         button.cornerRadius = 4
         button.borderWidth = 2
         button.borderColor = UIColor.brownColor()
-        button.titleLabel.font = UIFont.boldSystemFontOfSize(12)
+        button.titleLabel!.font = UIFont.boldSystemFontOfSize(12)
         
         self.view.addSubview(button)
     }
