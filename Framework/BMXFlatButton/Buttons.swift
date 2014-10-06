@@ -68,14 +68,6 @@ import UIKit
  */
 @IBDesignable public class FlatButton: AbstractButton {
     
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    override init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-   
     /// button corner radius, defaults to 2px
     @IBInspectable public var cornerRadius : CGFloat = 2 {
     didSet {
@@ -89,14 +81,6 @@ import UIKit
     Simple circular button. For correct appearance it is required to have a square size.
  */
 @IBDesignable public class CircularButton: AbstractButton {
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    override init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     public override func layoutSubviews() {
         super.layoutSubviews()
