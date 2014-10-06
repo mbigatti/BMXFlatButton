@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         //
         // add button by code
         //
+        // FIXME: currently this does not work
+        /*
         let x = self.view.bounds.size.width / 2 - 100 / 2
         let button = FlatButton(frame: CGRectMake(x, 300, 100, 50))
         
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
         button.titleLabel!.font = UIFont.boldSystemFontOfSize(12)
         
         self.view.addSubview(button)
+        */
     }
 
     override func didReceiveMemoryWarning() {
